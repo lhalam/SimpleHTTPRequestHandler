@@ -119,7 +119,7 @@ class UserTestPOST(unittest.TestCase):
         expected_status_code = 400
         expected_data = {}
         self.assertEqual(expected_status_code, response.status_code)
-        self.assertDictEqual(expected_data, response.json())
+        self.assertListEqual(expected_data, response.json())
 
     def test_create_users(self):
         data = [
