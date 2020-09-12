@@ -284,3 +284,7 @@ class UserTestDELETE(unittest.TestCase):
 
         self.assertEqual(expected_status_code, response.status_code)
         self.assertDictEqual(expected_data, response.json())
+
+
+if __name__ == '__main__':
+    unittest.main()
